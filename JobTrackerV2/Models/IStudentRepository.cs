@@ -8,5 +8,6 @@ namespace JobTrackerV2.Models
     public interface IStudentRepository
     {
         Student GetStudent(int Id);
+        IEnumerable<Student> GetAllStudent();
     }
 }

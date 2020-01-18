@@ -19,6 +19,11 @@ namespace JobTrackerV2.Models
             };
         }
 
+        public IEnumerable<Student> GetAllStudent()
+        {
+            return _studentList;
+        }
+
         public Student GetStudent(int Id)
         {
             return _studentList.FirstOrDefault(s => s.Id == Id);
